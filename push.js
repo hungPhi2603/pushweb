@@ -7,6 +7,6 @@ let vapidKeys = {
 
 push.setVapidDetails('mailto:test@code.co.uk', vapidKeys.publicKey, vapidKeys.privateKey)
 
-let sub
+let sub = {"endpoint":"https://fcm.googleapis.com/fcm/send/cAZf5IVnaec:APA91bGekZEVERkf3xd0K5ZikGxCKAejyRvSiz1Gwayt5sY-6BSMeBEdAUM66nDH6ZstMkmygnBpYyIC1xqOGPdpkN8macSxVExW-bDRfanD9U6I0P_y1_1tWWZj59X_aIWhZAmoOljS","expirationTime":null,"keys":{"p256dh":"BC1jgjIpbDdDTbtE5Q9tA6eyb99_P5Y6gesVWyKi9yTDJd2ssbJ9O2TcOwiVp0hPYp012TRxJoQFvoFvUdVKOnk","auth":"Yv2m3_-j0ROKWu7cihr8uw"}}
 
-push.sendNotification(sub, {title: 'this is title', description: 'this is desc'})
+push.sendNotification(sub, 'this is title')
