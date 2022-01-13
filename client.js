@@ -16,7 +16,7 @@ if ('serviceWorker' in navigator) {
     })
     console.log('Push registered...')
 
-    console.log('Sending push...')
-    await app.$axios.post(`${process.env.BASE_URL_API}/my/notifications/subscribe`, JSON.stringify(subscription))
+    console.log('Sending push...', JSON.stringify(subscription))
+    // await app.$axios.post(`${process.env.BASE_URL_API}/my/notifications/subscribe`, JSON.stringify(subscription))
     console.log('Push sent...')
   }

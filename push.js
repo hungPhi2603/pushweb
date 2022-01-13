@@ -9,4 +9,4 @@ push.setVapidDetails('mailto:test@code.co.uk', vapidKeys.publicKey, vapidKeys.pr
 
 let sub
 
-push.sendNotification(sub, 'test message')
+push.sendNotification(sub, {title: 'this is title', description: 'this is desc'})
